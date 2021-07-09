@@ -9,7 +9,7 @@ function compute()
 
     var year = new Date().getFullYear() + parseInt(years);
 
-    if(principal <= 0){
+    if(principal < 0 || principal == 0){
         alert("Enter a positive number");
         principal.focus();
         return false;
