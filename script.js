@@ -9,12 +9,12 @@ function compute()
 
     var year = new Date().getFullYear() + parseInt(years);
 
-    if(principal <= 0){
+    if(principal <= 0 || principal == undefined){
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     }
     else{
-        document.getElementById("result").innerHTML = 'If you deposit <mark>' +  principal + '</mark>,</br> at an interest rate of <mark>' + rate + '</mark>.</br> You will receive an amount of <mark>' + interest + '</mark>,</br> in the year <mark>' + year + '</mark>';
+        document.getElementById("result").innerHTML = '</br>If you deposit <mark>' +  principal + '</mark>,</br> at an interest rate of <mark>' + rate + '</mark>.</br> You will receive an amount of <mark>' + interest + '</mark>,</br> in the year <mark>' + year + '</mark>';
     }
 }
 
